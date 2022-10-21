@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'docker-slave'
+    label 'manual-slave'
   }
   stages {
     stage('Git Checkout') {
