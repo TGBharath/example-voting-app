@@ -17,6 +17,11 @@ pipeline {
             sh 'docker push 130826749738.dkr.ecr.us-east-1.amazonaws.com/vote:${BUILD_NUMBER}'
           }
         }
+        stage('Unit Testing') {
+          steps {
+            sh 'echo Run the Test Cases'
+          }
+        }
       }
     }
   }
